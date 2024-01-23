@@ -1,6 +1,8 @@
 <?php 
     $textToModify = $_GET['text'];
     $wordCensured = $_GET['badWord'];
+
+    $wordReplace = str_replace($wordCensured, '***', $textToModify)
 ?>
 
 <!DOCTYPE html>
@@ -13,5 +15,7 @@
 <body>
     <h1>TEXT: <?php echo $textToModify ?></h1>
     <h1>CENSURED WORD: <?php echo $wordCensured ?></h1>
+
+    <p><?php echo $wordReplace ?></p>
 </body>
 </html>
