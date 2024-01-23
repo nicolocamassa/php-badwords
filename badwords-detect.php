@@ -13,9 +13,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>TEXT: <?php echo $textToModify ?></h1>
+    <h1>TEXT:</h1>
+    <p>Letters in the text: <?php echo strlen($textToModify) ?></p>
+    <p><?php echo $textToModify ?></p>
     <h1>CENSURED WORD: <?php echo $wordCensured ?></h1>
 
+    <p>Letters in the NEW text: <?php echo strlen($wordReplace) ?></p>
     <p><?php echo $wordReplace ?></p>
 </body>
 </html>
