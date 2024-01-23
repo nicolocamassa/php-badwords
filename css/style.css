@@ -117,3 +117,23 @@ textarea:focus{
     color: white;
     cursor: pointer;
 }
+
+section{
+    padding: 70px;
+    padding-bottom: 0;
+}
+
+.word-counter{
+    display: flex;
+}
+
+.text-container{
+    overflow: auto;
+    color: #727272;
+    font-size: 25px;
+    max-height: 300px;
+}
+
+.censored-word{
+    color: rgb(246, 69, 69);
+}
